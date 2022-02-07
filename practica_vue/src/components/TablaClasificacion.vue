@@ -32,11 +32,23 @@ export default {
     mostrarJugadores(nombreEquipo){
       
       this.$emit("mostrarJugadores",nombreEquipo);
-    }
+    },
+    
   },
   created(){
     axios.get("http://localhost:3000/clubs").then((result)=>{
       this.equipos=result.data;
+
+      this.equipos.sort(function(equipo1, equipo2) {
+        if (equipo1.points < equipo2.points) {
+            return 1;
+        } else if (equipo1.points > equipo2.points) {
+            return -1;
+        } else {
+            return 0;
+        }
+    });
+      
     })
     
   }

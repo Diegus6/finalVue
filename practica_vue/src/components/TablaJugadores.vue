@@ -31,14 +31,14 @@ export default {
   methods: {
    
   },
-  created(){
+  beforeUpdate(){
+      console.log(this.equipo);
     axios.get("http://localhost:3000/players",
     {params:{
         team:this.equipo
         
     }}).then((result)=>{
       this.jugadores=result.data;
-      
     })
     
   }

@@ -29,6 +29,7 @@ export default {
       console.log(this.equipoAMostrar)
     }
   },
+  
 }
 </script>
 <style scoped>
