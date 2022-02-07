@@ -73,10 +73,6 @@
                 </div>
             </nav>
     </div>
-      <div id="nav">
-         |
-        <router-link to="/about">About</router-link>
-      </div>
 </div>
 </template>
 

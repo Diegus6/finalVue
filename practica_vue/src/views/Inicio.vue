@@ -1,5 +1,6 @@
 <template>
-  <div class="row inicio text-center">
+  <div class="row inicio text-center justify-content-center">
+    <img class="col-10" height="450" src="../assets/ligayfederacion.jpg">
       <h1 id="temporada">TEMPORADA 2021-2022</h1>
   </div>
 </template>
@@ -16,7 +17,7 @@ export default {
 </script>
 <style scoped>
   #temporada{
-      margin-top: 20%;
-      
+      font-size: 500%;
+      font-weight: bold;
   }
 </style>

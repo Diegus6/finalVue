@@ -3,8 +3,8 @@
   <div class="row min-vh-100 flex-column flex-md-row">
     <Menu class="col-lg-2 col-3"></Menu>
     <div class="col-lg-10 col-9">
-        <div>
-          <img src="./assets/laliga.png" width="">
+      <div class="row"><div class="row justify-content-center"><img class="col-6" height="120" src="./assets/laliga.png"></div></div>
+        <div class="row">
           <router-view/>
         </div>
     </div>
@@ -39,16 +39,4 @@ export default {
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
