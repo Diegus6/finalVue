@@ -160,7 +160,11 @@
       "round": "Jornada 1",
       "date": "2020-09-13",
       "team1": "FC Barcelona",
-      "team2": "Elche CF"
+      "team2": "Elche CF",
+      "score": [
+        1,
+        2
+      ]
     },
     {
       "id": 5,
@@ -174,22 +178,14 @@
       "round": "Jornada 1",
       "date": "2020-09-13",
       "team1": "Deportivo Alavés",
-      "team2": "Real Betis",
-      "score": [
-        0,
-        1
-      ]
+      "team2": "Real Betis"
     },
     {
       "id": 7,
       "round": "Jornada 1",
       "date": "2020-09-13",
       "team1": "Real Valladolid CF",
-      "team2": "Real Sociedad",
-      "score": [
-        1,
-        1
-      ]
+      "team2": "Real Sociedad"
     },
     {
       "id": 8,
