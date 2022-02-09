@@ -40,19 +40,19 @@
       "name": "FC Barcelona",
       "id": 6,
       "country": "Spain",
-      "points": 0
+      "points": 1
     },
     {
       "name": "Elche CF",
       "id": 7,
       "country": "Spain",
-      "points": 0
+      "points": 1
     },
     {
       "name": "Real Madrid",
       "id": 8,
       "country": "Spain",
-      "points": "6"
+      "points": 9
     },
     {
       "name": "Getafe CF",
@@ -64,13 +64,13 @@
       "name": "Deportivo Alavés",
       "id": 10,
       "country": "Spain",
-      "points": 0
+      "points": 1
     },
     {
       "name": "Real Betis",
       "id": 11,
       "country": "Spain",
-      "points": "5"
+      "points": 6
     },
     {
       "name": "Real Valladolid CF",
@@ -82,19 +82,19 @@
       "name": "Real Sociedad",
       "id": 13,
       "country": "Spain",
-      "points": 0
+      "points": 3
     },
     {
       "name": "Villarreal CF",
       "id": 14,
       "country": "Spain",
-      "points": 0
+      "points": 1
     },
     {
       "name": "SD Huesca",
       "id": 15,
       "country": "Spain",
-      "points": 0
+      "points": 1
     },
     {
       "name": "Valencia CF",
@@ -140,8 +140,8 @@
       "team1": "Granada CF",
       "team2": "Athletic Club Bilbao",
       "score": [
-        2,
-        0
+        1,
+        1
       ]
     },
     {
@@ -151,8 +151,8 @@
       "team1": "Cádiz CF",
       "team2": "CA Osasuna",
       "score": [
-        0,
-        2
+        1,
+        1
       ]
     },
     {
@@ -163,7 +163,7 @@
       "team2": "Elche CF",
       "score": [
         1,
-        2
+        1
       ]
     },
     {
@@ -171,21 +171,33 @@
       "round": "Jornada 1",
       "date": "2020-09-13",
       "team1": "Real Madrid",
-      "team2": "Getafe CF"
+      "team2": "Getafe CF",
+      "score": [
+        2,
+        1
+      ]
     },
     {
       "id": 6,
       "round": "Jornada 1",
       "date": "2020-09-13",
       "team1": "Deportivo Alavés",
-      "team2": "Real Betis"
+      "team2": "Real Betis",
+      "score": [
+        1,
+        1
+      ]
     },
     {
       "id": 7,
       "round": "Jornada 1",
       "date": "2020-09-13",
       "team1": "Real Valladolid CF",
-      "team2": "Real Sociedad"
+      "team2": "Real Sociedad",
+      "score": [
+        0,
+        1
+      ]
     },
     {
       "id": 8,
@@ -194,8 +206,8 @@
       "team1": "Villarreal CF",
       "team2": "SD Huesca",
       "score": [
-        1,
-        1
+        0,
+        0
       ]
     },
     {

@@ -24,8 +24,9 @@ export default {
     },
     methods: {
         guardarGoles(id){
-            if(this.resultado1[id]==""||this.resultado1[id]==null||this.resultado1[id]<0||
-            this.resultado2[id]==""||this.resultado2[id]==null||this.resultado2[id]<0){
+            console.log(this.resultado1[id]);
+            if(this.resultado1[id]==null||this.resultado1[id]<=-1||
+            this.resultado2[id]==null||this.resultado2[id]<=-1){
                 alert("Por favor mete goles a los dos equipos");
                 return false;
             }else{
@@ -39,13 +40,16 @@ export default {
                 let jornada=result.data;
                 let jornadaScore =Object.assign(jornada,marcador);
                 this.guardarPartido(jornadaScore,id);
-            })
+            }).catch(function(error){
+                alert("Se ha producido un error al recoger los datos")
+            });
             }
            
         },
         guardarPartido(jornadaScore,id){
 
-            axios.put("http://localhost:3000/matches/"+id, jornadaScore).then((result) => {
+            axios.put("http://localhost:3000/matches/"+id, jornadaScore)
+            .then((result) => {
                 
                 let primerEquipo=jornadaScore.team1;
                 let golPrimerEquipo= jornadaScore.score[0];
@@ -59,6 +63,9 @@ export default {
                 }else if(golPrimerEquipo<golSegundoEquipo){
                     this.sumarVictoriaClasificacion(segundoEquipo);
                 }
+            })
+            .catch(function(error){
+                alert("Se ha producido un error al insertar los datos")
             });
             
             
@@ -70,9 +77,13 @@ export default {
         
                 }}).then((result)=>{
                     let equipoClasificacion=result.data;
-                    let puntos = (equipoClasificacion.points+1);
-                    this.actualizarClasificacion(equipoClasificacion,puntos);
+                    
+                    equipoClasificacion[0].points+= 1;
+                    
+                    this.actualizarClasificacion(equipoClasificacion[0]);
 
+            }).catch(function(error){
+                alert("Se ha producido un error al recoger los datos")
             })
             axios.get("http://localhost:3000/clubs",
             {params:{
@@ -80,10 +91,14 @@ export default {
         
                 }}).then((result)=>{
                     let equipoClasificacion=result.data;
-                    let puntos = (equipoClasificacion.points+1);
-                    this.actualizarClasificacion(equipoClasificacion,puntos);
+                    console.log(equipoClasificacion[0].points);
+                    equipoClasificacion[0].points += +1;
+                    
+                    this.actualizarClasificacion(equipoClasificacion[0]);
 
-            })
+            }).catch(function(error){
+                alert("Se ha producido un error al recoger los datos")
+            });
         },
         sumarVictoriaClasificacion(equipo){
             axios.get("http://localhost:3000/clubs",
@@ -92,15 +107,19 @@ export default {
         
                 }}).then((result)=>{
                     let equipoClasificacion=result.data;
-                    equipoClasificacion.points = (equipoClasificacion.points+3);
-                    this.actualizarClasificacion(equipoClasificacion);
+                     equipoClasificacion[0].points+= 3;
+                    this.actualizarClasificacion(equipoClasificacion[0]);
 
-            })
+            }).catch(function(error){
+                alert("Se ha producido un error al recoger los datos")
+            });
         },
         actualizarClasificacion(equipo){
-
-            axios.put("http://localhost:3000/clubs", equipo).then((result) => {
-                console.log(result);
+            console.log(equipo);
+            axios.put("http://localhost:3000/clubs/"+equipo.id, equipo).then((result) => {
+                
+            }).catch(function(error){
+                alert("Se ha producido un error al insertar los datos")
             });
         }
 
@@ -115,7 +134,9 @@ export default {
         }}).then((result)=>{
             this.partidosJornada=result.data;
             
-        })
+        }).catch(function(error){
+                alert("Se ha producido un error al recoger los datos")
+            });
   }
 }
 </script>
