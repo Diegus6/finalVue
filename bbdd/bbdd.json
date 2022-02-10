@@ -4,13 +4,13 @@
       "name": "SD Eibar",
       "id": 0,
       "country": "Spain",
-      "points": 0
+      "points": 1
     },
     {
       "name": "RC Celta Vigo",
       "id": 1,
       "country": "Spain",
-      "points": 0
+      "points": 1
     },
     {
       "name": "Granada CF",
@@ -22,7 +22,7 @@
       "name": "Athletic Club Bilbao",
       "id": 3,
       "country": "Spain",
-      "points": 0
+      "points": 1
     },
     {
       "name": "Cádiz CF",
@@ -64,7 +64,7 @@
       "name": "Deportivo Alavés",
       "id": 10,
       "country": "Spain",
-      "points": 1
+      "points": 2
     },
     {
       "name": "Real Betis",
@@ -82,7 +82,7 @@
       "name": "Real Sociedad",
       "id": 13,
       "country": "Spain",
-      "points": 3
+      "points": 7
     },
     {
       "name": "Villarreal CF",
@@ -118,7 +118,7 @@
       "name": "Sevilla FC",
       "id": 19,
       "country": "Spain",
-      "points": 0
+      "points": 4
     }
   ],
   "matches": [
@@ -1216,7 +1216,11 @@
       "round": "Jornada 12",
       "date": "2020-12-04",
       "team1": "Athletic Club Bilbao",
-      "team2": "RC Celta Vigo"
+      "team2": "RC Celta Vigo",
+      "score": [
+        1,
+        1
+      ]
     },
     {
       "id": 109,
@@ -1272,7 +1276,11 @@
       "round": "Jornada 12",
       "date": "2020-12-06",
       "team1": "Deportivo Alavés",
-      "team2": "Real Sociedad"
+      "team2": "Real Sociedad",
+      "score": [
+        1,
+        1
+      ]
     },
     {
       "id": 117,
@@ -1461,7 +1469,11 @@
       "round": "Jornada 15",
       "date": "2020-12-23",
       "team1": "Real Sociedad",
-      "team2": "Atlético Madrid"
+      "team2": "Atlético Madrid",
+      "score": [
+        2,
+        1
+      ]
     },
     {
       "id": 144,
@@ -1566,7 +1578,11 @@
       "date": "2022-02-01",
       "team1": "SD Eibar",
       "team2": "Sevilla FC",
-      "id": 158
+      "id": 158,
+      "score": [
+        1,
+        1
+      ]
     },
     {
       "round": "Jornada 16",
@@ -1581,6 +1597,17 @@
       "team1": "Atlético Madrid",
       "team2": "SD Huesca",
       "id": 160
+    },
+    {
+      "round": "Jornada 9",
+      "date": "2022-02-09",
+      "team1": "Real Sociedad",
+      "team2": "Sevilla FC",
+      "id": 161,
+      "score": [
+        1,
+        2
+      ]
     }
   ],
   "players": [
@@ -1595,6 +1622,30 @@
       "name": "Sergio Ramos",
       "team": "Real Madrid",
       "scores": 2
+    },
+    {
+      "name": "Luka Modric",
+      "team": "Real Madrid",
+      "scores": 5,
+      "id": 3
+    },
+    {
+      "name": "Panda",
+      "team": "Real Betis",
+      "scores": 6,
+      "id": 4
+    },
+    {
+      "name": "Oyarzabal",
+      "team": "Real Sociedad",
+      "scores": 51,
+      "id": 5
+    },
+    {
+      "name": "Carlos Soler",
+      "team": "Valencia CF",
+      "scores": 2,
+      "id": 6
     }
   ]
 }

@@ -35,7 +35,7 @@ export default {
     },
     
   },
-  created(){
+  mounted(){
     axios.get("http://localhost:3000/clubs").then((result)=>{
       this.equipos=result.data;
 

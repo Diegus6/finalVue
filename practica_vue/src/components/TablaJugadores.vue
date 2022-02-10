@@ -8,7 +8,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr v-for="(jugador , index) in this.jugadores" :key="index">
+      <tr v-for="(jugador , index) in jugadores" :key="index">
         <td>{{jugador.name}}</td>
         <td>{{jugador.scores}}</td>
       </tr>
@@ -18,30 +18,20 @@
 </template>
 
 <script>
-import axios from "axios";
+
 
 export default {
   name: 'TablaClasificacion',
-  props:["equipo"],
+  props:["jugadores"],
   data() {
       return {
-       jugadores:[]
+       
       };
   },
   methods: {
    
   },
-  beforeUpdate(){
-      
-    axios.get("http://localhost:3000/players",
-    {params:{
-        team:this.equipo
-        
-    }}).then((result)=>{
-      this.jugadores=result.data;
-    })
-    
-  }
+  
 }
 </script>
 
