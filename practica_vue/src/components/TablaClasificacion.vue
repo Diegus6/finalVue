@@ -1,6 +1,6 @@
 <template>
 
-  <table class="table col-6">
+  <table class="table col-6 table-striped">
     <thead>
       <tr>
         <th>Equipo</th>

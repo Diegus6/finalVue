@@ -4,13 +4,13 @@
       "name": "SD Eibar",
       "id": 0,
       "country": "Spain",
-      "points": 1
+      "points": 3
     },
     {
       "name": "RC Celta Vigo",
       "id": 1,
       "country": "Spain",
-      "points": 1
+      "points": 2
     },
     {
       "name": "Granada CF",
@@ -52,25 +52,25 @@
       "name": "Real Madrid",
       "id": 8,
       "country": "Spain",
-      "points": 9
+      "points": 15
     },
     {
       "name": "Getafe CF",
       "id": 9,
       "country": "Spain",
-      "points": 0
+      "points": 3
     },
     {
       "name": "Deportivo Alavés",
       "id": 10,
       "country": "Spain",
-      "points": 2
+      "points": 3
     },
     {
       "name": "Real Betis",
       "id": 11,
       "country": "Spain",
-      "points": 6
+      "points": 9
     },
     {
       "name": "Real Valladolid CF",
@@ -94,7 +94,7 @@
       "name": "SD Huesca",
       "id": 15,
       "country": "Spain",
-      "points": 1
+      "points": 2
     },
     {
       "name": "Valencia CF",
@@ -106,13 +106,13 @@
       "name": "Levante UD",
       "id": 17,
       "country": "Spain",
-      "points": 0
+      "points": 3
     },
     {
       "name": "Atlético Madrid",
       "id": 18,
       "country": "Spain",
-      "points": 0
+      "points": 4
     },
     {
       "name": "Sevilla FC",
@@ -1090,7 +1090,11 @@
       "round": "Jornada 10",
       "date": "2020-11-21",
       "team1": "Villarreal CF",
-      "team2": "Real Madrid"
+      "team2": "Real Madrid",
+      "score": [
+        1,
+        2
+      ]
     },
     {
       "id": 91,
@@ -1434,35 +1438,55 @@
       "round": "Jornada 15",
       "date": "2020-12-23",
       "team1": "Deportivo Alavés",
-      "team2": "SD Eibar"
+      "team2": "SD Eibar",
+      "score": [
+        1,
+        1
+      ]
     },
     {
       "id": 139,
       "round": "Jornada 15",
       "date": "2020-12-23",
       "team1": "Real Betis",
-      "team2": "Cádiz CF"
+      "team2": "Cádiz CF",
+      "score": [
+        2,
+        1
+      ]
     },
     {
       "id": 140,
       "round": "Jornada 15",
       "date": "2020-12-23",
       "team1": "Getafe CF",
-      "team2": "RC Celta Vigo"
+      "team2": "RC Celta Vigo",
+      "score": [
+        4,
+        3
+      ]
     },
     {
       "id": 141,
       "round": "Jornada 15",
       "date": "2020-12-23",
       "team1": "SD Huesca",
-      "team2": "Levante UD"
+      "team2": "Levante UD",
+      "score": [
+        2,
+        4
+      ]
     },
     {
       "id": 142,
       "round": "Jornada 15",
       "date": "2020-12-23",
       "team1": "Real Madrid",
-      "team2": "Granada CF"
+      "team2": "Granada CF",
+      "score": [
+        2,
+        1
+      ]
     },
     {
       "id": 143,
@@ -1515,7 +1539,11 @@
       "round": "Jornada 16",
       "date": "2020-12-30",
       "team1": "Atlético Madrid",
-      "team2": "Getafe CF"
+      "team2": "Getafe CF",
+      "score": [
+        2,
+        0
+      ]
     },
     {
       "id": 150,
@@ -1596,7 +1624,11 @@
       "date": "2022-02-09",
       "team1": "Atlético Madrid",
       "team2": "SD Huesca",
-      "id": 160
+      "id": 160,
+      "score": [
+        1,
+        1
+      ]
     },
     {
       "round": "Jornada 9",
@@ -1607,6 +1639,17 @@
       "score": [
         1,
         2
+      ]
+    },
+    {
+      "round": "Jornada 1",
+      "date": "2022-02-11",
+      "team1": "SD Eibar",
+      "team2": "RC Celta Vigo",
+      "id": 162,
+      "score": [
+        1,
+        1
       ]
     }
   ],
@@ -1622,12 +1665,6 @@
       "name": "Sergio Ramos",
       "team": "Real Madrid",
       "scores": 2
-    },
-    {
-      "name": "Luka Modric",
-      "team": "Real Madrid",
-      "scores": 5,
-      "id": 3
     },
     {
       "name": "Panda",

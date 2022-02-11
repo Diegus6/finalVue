@@ -1,10 +1,19 @@
 <template>
 
-  <div>
-      <ul>
-          <li class="mt-4" v-for="(jugad,index) in this.jugadores" :key="index">{{jugad.name}}</li>
-      </ul>
-  </div>
+  <table class="table col-6 table-striped">
+    <thead>
+      <tr>
+        <th>Jugadores</th>
+        <th>Goles</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-for="(jugador , index) in jugadores" :key="index">
+        <td>{{jugador.name}}</td>
+        <td>{{jugador.scores}}</td>
+      </tr>
+    </tbody>
+  </table>
 
 </template>
 

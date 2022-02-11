@@ -41,6 +41,7 @@ export default {
                 let jornadaScore =Object.assign(jornada,marcador);
                 this.guardarPartido(jornadaScore,id);
             }).catch(function(error){
+               
                 alert("Se ha producido un error al recoger los datos")
             });
             }
@@ -65,6 +66,7 @@ export default {
                 }
             })
             .catch(function(error){
+                
                 alert("Se ha producido un error al insertar los datos")
             });
             
@@ -83,6 +85,7 @@ export default {
                     this.actualizarClasificacion(equipoClasificacion[0]);
 
             }).catch(function(error){
+                console.log("sumar empate1"+error);
                 alert("Se ha producido un error al recoger los datos")
             })
             axios.get("http://localhost:3000/clubs",
@@ -97,6 +100,7 @@ export default {
                     this.actualizarClasificacion(equipoClasificacion[0]);
 
             }).catch(function(error){
+                
                 alert("Se ha producido un error al recoger los datos")
             });
         },
@@ -115,10 +119,11 @@ export default {
             });
         },
         actualizarClasificacion(equipo){
-            console.log(equipo);
+            
             axios.put("http://localhost:3000/clubs/"+equipo.id, equipo).then((result) => {
                 
             }).catch(function(error){
+                
                 alert("Se ha producido un error al insertar los datos")
             });
         }
@@ -135,6 +140,7 @@ export default {
             this.partidosJornada=result.data;
             
         }).catch(function(error){
+            
                 alert("Se ha producido un error al recoger los datos")
             });
   }
