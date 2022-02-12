@@ -16,7 +16,7 @@
       "name": "Granada CF",
       "id": 2,
       "country": "Spain",
-      "points": 0
+      "points": 3
     },
     {
       "name": "Athletic Club Bilbao",
@@ -1259,7 +1259,11 @@
       "round": "Jornada 12",
       "date": "2020-12-06",
       "team1": "Granada CF",
-      "team2": "SD Huesca"
+      "team2": "SD Huesca",
+      "score": [
+        2,
+        1
+      ]
     },
     {
       "id": 114,
@@ -1664,7 +1668,7 @@
       "id": 2,
       "name": "Sergio Ramos",
       "team": "Real Madrid",
-      "scores": 2
+      "scores": 3
     },
     {
       "name": "Panda",
@@ -1695,6 +1699,12 @@
       "team": "Real Madrid",
       "scores": 5,
       "id": 9
+    },
+    {
+      "name": "Pepe",
+      "team": "SD Eibar",
+      "scores": 3,
+      "id": 10
     }
   ]
 }

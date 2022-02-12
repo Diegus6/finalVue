@@ -5,7 +5,7 @@ import Jornadas from '../views/Jornadas.vue'
 import NuevoPartido from '../views/NuevoPartido.vue'
 import Equipos from '../views/Equipos.vue'
 import Jugador from '../views/Jugador.vue'
-
+import SumarJugador from '../views/SumarJugador.vue'
 const routes = [{
         path: '/',
         name: 'Inicio',
@@ -35,6 +35,11 @@ const routes = [{
         path: '/jugadores',
         name: 'Jugador',
         component: Jugador
+    },
+    {
+        path: '/nuevojugador',
+        name: 'SumarJugador',
+        component: SumarJugador
     }
 ]
 
