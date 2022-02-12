@@ -6,6 +6,8 @@ import NuevoPartido from '../views/NuevoPartido.vue'
 import Equipos from '../views/Equipos.vue'
 import Jugador from '../views/Jugador.vue'
 import SumarJugador from '../views/SumarJugador.vue'
+import EliminarJugador from '../views/EliminarJugador.vue'
+
 const routes = [{
         path: '/',
         name: 'Inicio',
@@ -40,6 +42,11 @@ const routes = [{
         path: '/nuevojugador',
         name: 'SumarJugador',
         component: SumarJugador
+    },
+    {
+        path: '/eliminarjugador',
+        name: 'EliminarJugador',
+        component: EliminarJugador
     }
 ]
 

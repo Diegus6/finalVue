@@ -8,7 +8,7 @@
 
 import NuevoJugador from "../components/NuevoJugador.vue";
 export default {
-  name: "Clasifiacion",
+  name: "SumarJugador",
   components: {
     NuevoJugador
   },

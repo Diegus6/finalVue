@@ -42,8 +42,12 @@ export default {
   },
   methods: {
     eliminarJugador(id) {
-      console.log(id);
-      axios.delete("http://localhost:3000/players/" + id);
+      
+      axios.delete("http://localhost:3000/players/" + id)
+      .catch(function(error){
+                
+          alert("Se ha producido un error al eliminar los datos")
+        });
     },
     sumarGoles(id) {
       if (isNaN(this.goles[id]) || this.goles[id] <= 0) {

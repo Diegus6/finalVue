@@ -49,7 +49,10 @@ export default {
         }
     });
       
-    })
+    }).catch(function(error){
+                
+          alert("Se ha producido un error al recoger los datos")
+        });
     
   }
 }
