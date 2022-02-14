@@ -30,10 +30,8 @@ export default {
       };
   },
   methods: {
-    
-  },
-  mounted(){
-      let jornadaApoyo=[];
+    obtenerJornada(){
+        let jornadaApoyo=[];
       axios.get("http://localhost:3000/matches").then((result)=>{
         this.jornadas =[... new Set(result.data.map(x => {
             if(jornadaApoyo.length==0){
@@ -53,6 +51,10 @@ export default {
         }))];
 
     });
+    }
+  },
+  mounted(){
+      this.obtenerJornada();
     
     
   }

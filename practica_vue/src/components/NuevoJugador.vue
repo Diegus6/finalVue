@@ -26,6 +26,7 @@ import axios from "axios";
 export default {
   name: 'NuevoJugador',
   props:["equipo"],
+  emits:["actualizar"],
   data() {
       return {
         nombre:"",
@@ -68,7 +69,8 @@ export default {
       axios.post("http://localhost:3000/players", jugador).then((result) => {
             this.nombre="";
             this.goles=null;
-            this.equipoSeleccionado="";                     
+            this.equipoSeleccionado="";
+            this.$emit("actualizar");                     
       }).catch(function(error){
           alert("Se ha producido un error al introducir los datos")
       });

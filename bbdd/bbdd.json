@@ -4,25 +4,25 @@
       "name": "SD Eibar",
       "id": 0,
       "country": "Spain",
-      "points": 3
+      "points": 8
     },
     {
       "name": "RC Celta Vigo",
       "id": 1,
       "country": "Spain",
-      "points": 2
+      "points": 5
     },
     {
       "name": "Granada CF",
       "id": 2,
       "country": "Spain",
-      "points": 3
+      "points": 7
     },
     {
       "name": "Athletic Club Bilbao",
       "id": 3,
       "country": "Spain",
-      "points": 1
+      "points": 7
     },
     {
       "name": "Cádiz CF",
@@ -46,13 +46,13 @@
       "name": "Elche CF",
       "id": 7,
       "country": "Spain",
-      "points": 1
+      "points": 4
     },
     {
       "name": "Real Madrid",
       "id": 8,
       "country": "Spain",
-      "points": 15
+      "points": 19
     },
     {
       "name": "Getafe CF",
@@ -76,25 +76,25 @@
       "name": "Real Valladolid CF",
       "id": 12,
       "country": "Spain",
-      "points": 0
+      "points": 3
     },
     {
       "name": "Real Sociedad",
       "id": 13,
       "country": "Spain",
-      "points": 7
+      "points": 11
     },
     {
       "name": "Villarreal CF",
       "id": 14,
       "country": "Spain",
-      "points": 1
+      "points": 3
     },
     {
       "name": "SD Huesca",
       "id": 15,
       "country": "Spain",
-      "points": 2
+      "points": 3
     },
     {
       "name": "Valencia CF",
@@ -112,13 +112,13 @@
       "name": "Atlético Madrid",
       "id": 18,
       "country": "Spain",
-      "points": 4
+      "points": 7
     },
     {
       "name": "Sevilla FC",
       "id": 19,
       "country": "Spain",
-      "points": 4
+      "points": 11
     }
   ],
   "matches": [
@@ -259,14 +259,22 @@
       "round": "Jornada 2",
       "date": "2020-09-20",
       "team1": "Levante UD",
-      "team2": "Atlético Madrid"
+      "team2": "Atlético Madrid",
+      "score": [
+        1,
+        2
+      ]
     },
     {
       "id": 14,
       "round": "Jornada 2",
       "date": "2020-09-20",
       "team1": "Sevilla FC",
-      "team2": "Elche CF"
+      "team2": "Elche CF",
+      "score": [
+        2,
+        1
+      ]
     },
     {
       "id": 15,
@@ -1372,7 +1380,11 @@
       "round": "Jornada 14",
       "date": "2020-12-20",
       "team1": "Athletic Club Bilbao",
-      "team2": "SD Huesca"
+      "team2": "SD Huesca",
+      "score": [
+        1,
+        1
+      ]
     },
     {
       "id": 129,
@@ -1508,21 +1520,33 @@
       "round": "Jornada 15",
       "date": "2020-12-23",
       "team1": "Valencia CF",
-      "team2": "Sevilla FC"
+      "team2": "Sevilla FC",
+      "score": [
+        1,
+        2
+      ]
     },
     {
       "id": 145,
       "round": "Jornada 15",
       "date": "2020-12-23",
       "team1": "Real Valladolid CF",
-      "team2": "FC Barcelona"
+      "team2": "FC Barcelona",
+      "score": [
+        1,
+        0
+      ]
     },
     {
       "id": 146,
       "round": "Jornada 15",
       "date": "2020-12-23",
       "team1": "Villarreal CF",
-      "team2": "Athletic Club Bilbao"
+      "team2": "Athletic Club Bilbao",
+      "score": [
+        1,
+        1
+      ]
     },
     {
       "id": 147,
@@ -1536,7 +1560,11 @@
       "round": "Jornada 16",
       "date": "2020-12-30",
       "team1": "Athletic Club Bilbao",
-      "team2": "Real Sociedad"
+      "team2": "Real Sociedad",
+      "score": [
+        1,
+        1
+      ]
     },
     {
       "id": 149,
@@ -1554,7 +1582,11 @@
       "round": "Jornada 16",
       "date": "2020-12-30",
       "team1": "FC Barcelona",
-      "team2": "SD Eibar"
+      "team2": "SD Eibar",
+      "score": [
+        1,
+        2
+      ]
     },
     {
       "id": 151,
@@ -1621,7 +1653,11 @@
       "date": "2022-02-01",
       "team1": "SD Eibar",
       "team2": "Sevilla FC",
-      "id": 159
+      "id": 159,
+      "score": [
+        1,
+        1
+      ]
     },
     {
       "round": "Jornada 9",
@@ -1651,6 +1687,94 @@
       "team1": "SD Eibar",
       "team2": "RC Celta Vigo",
       "id": 162,
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "round": "Jornada 1",
+      "date": "2022-02-04",
+      "team1": "SD Eibar",
+      "team2": "Athletic Club Bilbao",
+      "id": 163,
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "round": "Jornada 1",
+      "date": "2022-02-05",
+      "team1": "Granada CF",
+      "team2": "FC Barcelona",
+      "id": 164,
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "round": "Jornada 1",
+      "date": "2022-02-03",
+      "team1": "Granada CF",
+      "team2": "Elche CF",
+      "id": 165,
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "round": "Jornada 2",
+      "date": "2022-02-11",
+      "team1": "RC Celta Vigo",
+      "team2": "Villarreal CF",
+      "id": 166,
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "round": "Jornada 1",
+      "date": "2022-03-05",
+      "team1": "Real Madrid",
+      "team2": "SD Huesca",
+      "id": 167,
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "round": "Jornada 1",
+      "date": "2022-02-04",
+      "team1": "Real Madrid",
+      "team2": "Real Sociedad",
+      "id": 168,
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "round": "Jornada 1",
+      "date": "2022-02-09",
+      "team1": "RC Celta Vigo",
+      "team2": "Elche CF",
+      "id": 169,
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "round": "Jornada 5",
+      "date": "2022-01-31",
+      "team1": "RC Celta Vigo",
+      "team2": "Elche CF",
+      "id": 170,
       "score": [
         1,
         1
@@ -1695,16 +1819,106 @@
       "id": 8
     },
     {
-      "name": "Vinicius",
-      "team": "Real Madrid",
-      "scores": 5,
-      "id": 9
-    },
-    {
       "name": "Pepe",
       "team": "SD Eibar",
-      "scores": 3,
+      "scores": 4,
       "id": 10
+    },
+    {
+      "name": "Oyarzabal",
+      "team": "Real Sociedad",
+      "scores": 2,
+      "id": 11
+    },
+    {
+      "name": "Iago Aspas",
+      "team": "RC Celta Vigo",
+      "scores": 1,
+      "id": 12
+    },
+    {
+      "name": "Rakitic",
+      "team": "Sevilla FC",
+      "scores": 1,
+      "id": 13
+    },
+    {
+      "name": "Jao Felix",
+      "team": "Atlético Madrid",
+      "scores": 1,
+      "id": 14
+    },
+    {
+      "name": "Luis Suarez",
+      "team": "Atlético Madrid",
+      "scores": 2,
+      "id": 15
+    },
+    {
+      "name": "aa",
+      "team": "Getafe CF",
+      "scores": 1,
+      "id": 16
+    },
+    {
+      "name": "Vinicius",
+      "team": "Real Madrid",
+      "scores": 3,
+      "id": 17
+    },
+    {
+      "name": "Pau",
+      "team": "Villarreal CF",
+      "scores": 0,
+      "id": 18
+    },
+    {
+      "name": "Papu",
+      "team": "Sevilla FC",
+      "scores": 3,
+      "id": 19
+    },
+    {
+      "name": "a",
+      "team": "Levante UD",
+      "scores": 2,
+      "id": 20
+    },
+    {
+      "name": "s",
+      "team": "Levante UD",
+      "scores": 2,
+      "id": 21
+    },
+    {
+      "name": "assa",
+      "team": "Real Sociedad",
+      "scores": 3,
+      "id": 22
+    },
+    {
+      "name": "sevilsta",
+      "team": "Sevilla FC",
+      "scores": 1,
+      "id": 23
+    },
+    {
+      "name": "otro",
+      "team": "Sevilla FC",
+      "scores": 2,
+      "id": 24
+    },
+    {
+      "name": "tercero",
+      "team": "Sevilla FC",
+      "scores": 3,
+      "id": 25
+    },
+    {
+      "name": "aaaa",
+      "team": "Atlético Madrid",
+      "scores": 2,
+      "id": 26
     }
   ]
 }

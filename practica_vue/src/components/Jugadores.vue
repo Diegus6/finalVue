@@ -22,29 +22,49 @@ import axios from "axios";
 
 export default {
   name: 'Jugadores',
-  props:["equipo"],
+  props:["equipo", "actualizado"],
+  emits:["yaActualizado"],
   data() {
       return {
-          jugadores:[]
+          jugadores:[],
+          estaActualizado:""
       };
   },
   methods: {
     
-    
+    actualizarEquipo(){
+    axios.get("http://localhost:3000/players",
+      {params:{
+          team:this.equipo
+        
+      }}).then((result)=>{
+        this.jugadores=result.data;
+        this.$emit("yaActualizado")
+      }).catch(function(error){
+        alert("Se ha producido un error al recoger los datos")
+      });
+
+      
+    }
   },
   beforeMount(){
-      
-    axios.get("http://localhost:3000/players",
-     {params:{
-        team:this.equipo
-        
-    }}).then((result)=>{
-      this.jugadores=result.data;
-      
-    }).catch(function(error){
-        alert("Se ha producido un error al recoger los datos")
-    });
+      this.actualizarEquipo();
     
+    
+  },
+  updated(){
+    if(this.actualizado){
+      if(this.actualizado==false){
+        console.log("falso")
+      }else{
+        console.log("actualiza")
+        this.actualizarEquipo();
+      }
+    }
+    
+  },
+  created(){
+    this.estaActualizado=this.actualizado;
   }
 }
 </script>
