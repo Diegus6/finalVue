@@ -9,6 +9,7 @@
       <TablaJugadores
         v-if="jugadores.length >0"
         :jugadores="jugadores" :mostrarBotones="mostrar"
+        @actualizarJugadores="actualizarJugadores"
       ></TablaJugadores>
     </div>
   </div>
@@ -47,6 +48,9 @@ export default {
           alert("Se ha producido un error al recoger los datos");
         });
     },
+    actualizarJugadores(equipo){
+        this.mostrarJugadoresMetodo(equipo);
+    }
   },
 };
 </script>

@@ -1926,28 +1926,16 @@
       "id": 25
     },
     {
-      "name": "aaaa",
-      "team": "Atlético Madrid",
-      "scores": 2,
-      "id": 26
-    },
-    {
-      "name": "ss",
-      "team": "Atlético Madrid",
-      "scores": 0,
-      "id": 27
-    },
-    {
       "name": "Dani Parejo",
       "team": "Valencia CF",
       "scores": 1,
       "id": 28
     },
     {
-      "name": "a",
-      "team": "SD Eibar",
-      "scores": 1,
-      "id": 29
+      "name": "Iñaki Williams",
+      "team": "Athletic Club Bilbao",
+      "scores": 3,
+      "id": 30
     }
   ]
 }

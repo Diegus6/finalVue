@@ -20,7 +20,7 @@
           </button>
         </td>
         <td v-if="mostrarBotones">
-          <button @click="eliminarJugador(jugador.id)" class="btn btn-danger">
+          <button @click="eliminarJugador(jugador.id,jugador.team)" class="btn btn-danger">
             Eliminar
           </button>
         </td>
@@ -35,16 +35,20 @@ import axios from "axios";
 export default {
   name: "TablaClasificacion",
   props: ["jugadores", "mostrarBotones"],
+  emits:["actualizarJugadores"],
   data() {
     return {
       goles: [],
     };
   },
   methods: {
-    eliminarJugador(id) {
+    eliminarJugador(id,equipo) {
       
       axios.delete("http://localhost:3000/players/" + id)
-      .catch(function(error){
+      .then((result)=>{
+        this.$emit("actualizarJugadores",equipo);
+    })
+    .catch(function(error){
                 
           alert("Se ha producido un error al eliminar los datos")
         });
