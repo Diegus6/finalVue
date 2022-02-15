@@ -52,7 +52,7 @@
       "name": "Real Madrid",
       "id": 8,
       "country": "Spain",
-      "points": 19
+      "points": 22
     },
     {
       "name": "Getafe CF",
@@ -1779,6 +1779,17 @@
         1,
         1
       ]
+    },
+    {
+      "round": "Jornada 8",
+      "date": "2022-02-17",
+      "team1": "RC Celta Vigo",
+      "team2": "Real Madrid",
+      "id": 171,
+      "score": [
+        1,
+        2
+      ]
     }
   ],
   "players": [
@@ -1792,7 +1803,7 @@
       "id": 2,
       "name": "Sergio Ramos",
       "team": "Real Madrid",
-      "scores": 3
+      "scores": 4
     },
     {
       "name": "Panda",
@@ -1809,13 +1820,13 @@
     {
       "name": "Luka Modric",
       "team": "Real Madrid",
-      "scores": 2,
+      "scores": 3,
       "id": 7
     },
     {
       "name": "Benzema",
       "team": "Real Madrid",
-      "scores": 4,
+      "scores": 5,
       "id": 8
     },
     {
@@ -1919,6 +1930,24 @@
       "team": "Atlético Madrid",
       "scores": 2,
       "id": 26
+    },
+    {
+      "name": "ss",
+      "team": "Atlético Madrid",
+      "scores": 0,
+      "id": 27
+    },
+    {
+      "name": "Dani Parejo",
+      "team": "Valencia CF",
+      "scores": 1,
+      "id": 28
+    },
+    {
+      "name": "a",
+      "team": "SD Eibar",
+      "scores": 1,
+      "id": 29
     }
   ]
 }

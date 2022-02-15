@@ -54,10 +54,7 @@ export default {
   },
   updated(){
     if(this.actualizado){
-      if(this.actualizado==false){
-        console.log("falso")
-      }else{
-        console.log("actualiza")
+      if(this.actualizado){
         this.actualizarEquipo();
       }
     }

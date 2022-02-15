@@ -46,7 +46,6 @@ export default {
     todosEquipos(){
         axios.get("http://localhost:3000/clubs").then((result)=>{
           this.equipos=result.data;
-          console.log("equipos entraod");
     }).catch(function(error){
         alert("Se ha producido un error al recoger los datos")
     });

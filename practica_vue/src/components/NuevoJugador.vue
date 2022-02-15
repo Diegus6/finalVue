@@ -79,7 +79,6 @@ export default {
     
   },
   beforeMount(){
-    console.log(this.equipo)
     axios.get("http://localhost:3000/clubs").then((result)=>{
       this.equipos=result.data;
       
